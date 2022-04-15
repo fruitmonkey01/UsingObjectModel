@@ -1,3 +1,4 @@
+print("Hello world!")
 -- References: 
 -- For RGB Color: 
 -- https://roblox.fandom.com/wiki/Tutorial:Using_Color3
@@ -14,7 +15,7 @@ model.Parent = game.Workspace
 -- creating the basic planet
 local planet1 = Instance.new("Part")
 planet1.Parent = game.Workspace
-planet1.Material = Enum.Material.Neon
+planet1.Material = Enum.Material.Wood -- .Neon
 planet1.Size = Vector3.new(2, 2, 2)
 planet1.Position = Vector3.new(1, 2, 3)
 planet1.Shape = "Ball"
@@ -35,5 +36,10 @@ local planet3 = planet1:Clone()
 planet3.Position = Vector3.new(planet1.Position.X - 8, planet1.Position.Y, planet1.Position.Z - 8)
 planet3.Parent = model
 planet3.Name = "Planet3"
+
+-- call rotate function for orientation, which defined in the ModuleScript under the game.ReplicatedStorage
+local module = require(game.ReplicatedStorage.ModuleScript)
+-- pass the part to rotate itself, for example: planet2
+module.rotate(planet2)
 
 
