@@ -1,36 +1,32 @@
-This is a basic example for creating a Model and assigned planet objects to the Model
+This is a basic example for creating a Model and assigned planet objects to the Model by using Roblox Studio and Lua Script.
 <br>
-by using Roblox Studio and Lua Script.
+Step 1: Place the PlanetModel.lua script under the StarterPlayer -> StarterPlayerScript -> PlanetModel.lua
 <br>
-Place the PlanetModel.lua script under the StarterPlayer -> StarterPlayerScript -> PlanetModel.lua
-<br>
-Place the ModuleScript.lua script under the ReplicatedStorage -> ModuleScript.lua
-<br>
+Step 2:Place the ModuleScript.lua script under the ReplicatedStorage -> ModuleScript.lua
+<br> 
+
+![alt PlanetModelRotate](https://github.com/fruitmonkey01/UsingObjectModel/blob/main/PlanetModelRotate.png)
+
+<br> 
 Some references used in the example described in the following:
 <br>
-Reference: 
-<br> 
-1. For RGB Color:
-<br> 
-https://roblox.fandom.com/wiki/Tutorial:Using_Color3
-<br> 
-2. For Model Creation: 
-<br> 
+References:
+<br>
+1. For Model Creation:
+<br>
 https://developer.roblox.com/en-us/api-reference/class/Model
 <br>
-3. For Part Object creation using Clone() API:
+2. For Part Object creation using Clone() API:
 <br>
 https://developer.roblox.com/en-us/api-reference/function/Instance/Clone
 <br>
-4. For the rotate function for planet orientation, which defined in the ModuleScript
-<br> 
+3. For the rotate function for planet orientation, which defined in the ModuleScript
+<br>
 ModuleScript.lua located in the the game.ReplicatedStorage
 <br>
 https://developer.roblox.com/en-us/api-reference/class/ModuleScript
 <br>
-5. For Rotate function:
+4. For Rotate function:
 <br>
 https://developer.roblox.com/en-us/api-reference/property/BasePart/Orientation
 <br>
-
-![alt PlanetModelRotate](https://github.com/fruitmonkey01/UsingObjectModel/blob/main/PlanetModelRotate.png)
