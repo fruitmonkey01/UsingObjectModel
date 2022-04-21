@@ -12,6 +12,7 @@ local model = Instance.new("Model")
 model.Name = "Model1"
 model.Parent = game.Workspace
 local stud_offset = 8
+local transparency_value = 0.35
 
 -- creating the basic planet
 local planet1 = Instance.new("Part")
@@ -26,6 +27,7 @@ planet1.CanCollide = true
 planet1.Parent = model
 planet1.Name = "Planet1"
 planet1.Color = Color3.new(0.551961, 0.55095, 0.8500404)
+planet1.Transparency = transparency_value
 
 -- creating the 2nd cloned planet with Position offset added 8 studs on the X and Z coordinate
 local planet2 = planet1:Clone()
@@ -33,6 +35,7 @@ planet2.Position = Vector3.new(planet1.Position.X + stud_offset, planet1.Positio
 planet2.Parent = model
 planet2.Name = "Planet2"
 planet2.Color = Color3.new(0.501961, 0.25095, 0.0100404) -- Moca
+planet2.Transparency = transparency_value
 
 -- creating the 3rd cloned planet with Position offset minused 8 studs on the X and Z coordinate
 local planet3 = planet1:Clone()
@@ -40,6 +43,7 @@ planet3.Position = Vector3.new(planet1.Position.X - stud_offset, planet1.Positio
 planet3.Parent = model
 planet3.Name = "Planet3"
 planet3.Color = Color3.new(0.5, 1, 0.5) -- Banana
+planet3.Transparency = transparency_value
 
 -- call rotate function for orientation, which defined in the ModuleScript under the game.ReplicatedStorage
 local module = require(game.ReplicatedStorage.ModuleScript)

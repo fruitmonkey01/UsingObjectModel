@@ -8,6 +8,11 @@ Step 2:Place the ModuleScript.lua script under the ReplicatedStorage -> ModuleSc
 ![alt PlanetModelRotate](https://github.com/fruitmonkey01/UsingObjectModel/blob/main/PlanetModelRotate.png)
 
 <br> 
+The purpose of using Module Script is to make planet rotation function reusable.
+<br> 
+The purpose of using RunService.RenderStepped is for updating planet's rotation.
+
+<br> 
 Some references used in the example described in the following:
 <br>
 References:
